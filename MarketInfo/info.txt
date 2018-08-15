@@ -1,0 +1,10 @@
+path param : 
+1. Market type : bse,nse
+	ex https://www.moneycontrol.com/stocks/marketinfo/marketcap/<%Market type%>/index.html
+	
+2. Sectoral Screener
+	CRITERIA: netprofit etc.
+	SECTOR: banks-private-sector etc.
+	ex https://www.moneycontrol.com/stocks/marketinfo/<%CRITERIA%>/<%Market type%>/<%SECTOR%>.html
+
+table : <table class="tbldata14 bdrtpg" width="100%" border="0" cellspacing="0" cellpadding="0">

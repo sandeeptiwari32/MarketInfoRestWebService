@@ -7,4 +7,124 @@ path param :
 	SECTOR: banks-private-sector etc.
 	ex https://www.moneycontrol.com/stocks/marketinfo/<%CRITERIA%>/<%Market type%>/<%SECTOR%>.html
 
-table : <table class="tbldata14 bdrtpg" width="100%" border="0" cellspacing="0" cellpadding="0">
+MARKETTYPE value:
+bse
+nse
+	
+CRI value:
+
+<select style="width:190px;" name="screen_crit" id="screen_crit">
+ 				<option value="">Criteria</option>
+				<option value="market-capitalisation">Market Capitalisation</option>
+				<option value="net-sales" selected="">Net Sales</option>
+				<option value="net-profit">Net Profit</option>
+				<option value="total-assets">Total Assets</option>
+				<option value="excise">Excise</option>
+				<option value="other-income">Other Income</option>
+				<option value="raw-material-cost">Raw Materials</option>
+				<option value="power-fuel-cost">Power &amp; Fuel</option>
+				<option value="employee-cost">Employee Cost</option>
+				<option value="ebitda">PBDIT</option>
+				<option value="interest-cost">Interest</option>
+				<option value="tax-paid">Tax</option>
+				<option value="earning-per-share">EPS</option>
+				<option value="investment">Investments</option>
+				<option value="sundry-debtors">Sundry Debtors</option>
+				<option value="cash-bank">Cash/Bank</option>
+				<option value="inventory">Inventory</option>
+				<option value="debt">Debt</option>
+				<option value="contingent-liability">Contingent Liabilities</option>
+</select>
+
+SEC value:
+
+<select style="width:190px;" name="sel_code" id="sel_code">
+ 				<option value="">Sector</option>
+				<option value="abrasives">Abrasives</option>
+				<option value="aluminium">Aluminium</option>
+				<option value="aquaculture">Aquaculture</option>
+				<option value="auto-2-3-wheelers">Auto - 2 &amp; 3 Wheelers</option>
+				<option value="auto-cars-jeeps">Auto - Cars &amp; Jeeps</option>
+				<option value="auto-lcvs-hcvs">Auto - LCVs &amp; HCVs</option>
+				<option value="auto-tractors">Auto - Tractors</option>
+				<option value="auto-ancillaries">Auto Ancillaries</option>
+				<option value="banks-private-sector">Banks - Private Sector</option>
+				<option value="banks-public-sector">Banks - Public Sector</option>
+				<option value="bearings">Bearings</option>
+				<option value="breweries-distilleries">Breweries &amp; Distilleries</option>
+				<option value="cables-power-others">Cables - Power &amp; Others</option>
+				<option value="cables-telephone">Cables - Telephone</option>
+				<option value="castings-forgings">Castings &amp; Forgings</option>
+				<option value="cement-major">Cement - Major</option>
+				<option value="cement-mini">Cement - Mini</option>
+				<option value="cement-products-building-materials">Cement - Products &amp; Building Materials</option>
+				<option value="ceramics-granite">Ceramics &amp; Granite</option><option value="chemicals">Chemicals</option>
+				<option value="cigarettes">Cigarettes</option>
+				<option value="compressors">Compressors</option>
+				<option value="computer-software-training">Computer Software Training</option>
+				<option value="computers-hardware">Computers - Hardware</option>
+				<option value="computers-software">Computers - Software</option>
+				<option value="computers-software-training">Computers - Software - Training</option>
+				<option value="computers-software-medium-small">Computers - Software Medium &amp; Small</option>
+				<option value="construction-contracting-civil">Construction &amp; Contracting - Civil</option>
+				<option value="construction-contracting-housing">Construction &amp; Contracting - Housing</option>
+				<option value="construction-contracting-real-estate">Construction &amp; Contracting - Real Estate</option>
+				<option value="consumer-goods-electronic">Consumer Goods - Electronic</option>
+				<option value="consumer-goods-white-goods">Consumer Goods - White Goods</option>
+				<option value="couriers">Couriers</option><option value="detergents">Detergents</option>
+				<option value="diamond-cutting-jewellery-precious-metals">Diamond Cutting &amp; Jewellery &amp; Precious Metals</option>
+				<option value="diversified">Diversified</option><option value="domestic-appliances">Domestic Appliances</option>
+				<option value="dry-cells">Dry Cells</option><option value="dyes-pigments">Dyes &amp; Pigments</option>
+				<option value="edible-oils-solvent-extraction">Edible Oils &amp; Solvent Extraction</option>
+				<option value="electric-equipment">Electric Equipment</option><option value="electricals">Electricals</option>
+				<option value="electrodes-graphite">Electrodes &amp; Graphite</option><option value="engineering">Engineering</option>
+				<option value="engineering-heavy">Engineering - Heavy</option><option value="engines">Engines</option>
+				<option value="fasteners">Fasteners</option><option value="fertilisers">Fertilisers</option>
+				<option value="finance-general">Finance - General</option>
+				<option value="finance-housing">Finance - Housing</option>
+				<option value="finance-investments">Finance - Investments</option>
+				<option value="finance-leasing-hire-purchase">Finance - Leasing &amp; Hire Purchase</option>
+				<option value="finance-term-lending-institutions">Finance - Term Lending Institutions</option>
+				<option value="food-processing">Food Processing</option>
+				<option value="glass-glass-products">Glass &amp; Glass Products</option>
+				<option value="hospitals-medical-services">Hospitals &amp; Medical Services</option>
+				<option value="hotels">Hotels</option><option value="infrastructure-general">Infrastructure - General</option>
+				<option value="leather-products">Leather Products</option><option value="lubricants">Lubricants</option>
+				<option value="machine-tools">Machine Tools</option><option value="media-entertainment">Media &amp; Entertainment</option>
+				<option value="metals-non-ferrous">Metals - Non Ferrous</option><option value="mining-minerals">Mining &amp; Minerals</option>
+				<option value="miscellaneous">Miscellaneous</option><option value="oil-drilling-and-exploration">Oil Drilling And Exploration</option>
+				<option value="packaging">Packaging</option><option value="paints-varnishes">Paints &amp; Varnishes</option>
+				<option value="paper">Paper</option><option value="personal-care">Personal Care</option>
+				<option value="pesticides-agro-chemicals">Pesticides &amp; Agro Chemicals</option>
+				<option value="petrochemicals">Petrochemicals</option><option value="pharmaceuticals">Pharmaceuticals</option>
+				<option value="plantations-tea-coffee">Plantations - Tea &amp; Coffee</option>
+				<option value="plastics">Plastics</option>
+				<option value="power-generation-distribution">Power - Generation &amp; Distribution</option>
+				<option value="power-transmission-equipment">Power - Transmission &amp; Equipment</option>
+				<option value="printing-stationery">Printing &amp; Stationery</option><option value="pumps">Pumps</option>
+				<option value="refineries">Refineries</option><option value="retail">Retail</option><option value="rubber">Rubber</option>
+				<option value="shipping">Shipping</option><option value="steel-cr-hr-strips">Steel - CR &amp; HR Strips</option>
+				<option value="steel-gp-gc-sheets">Steel - GP &amp; GC Sheets</option><option value="steel-large">Steel - Large</option>
+				<option value="steel-medium-small">Steel - Medium &amp; Small</option><option value="steel-pig-iron">Steel - Pig Iron</option>
+				<option value="steel-rolling">Steel - Rolling</option><option value="steel-sponge-iron">Steel - Sponge Iron</option>
+				<option value="steel-tubes-pipes">Steel - Tubes &amp; Pipes</option><option value="sugar">Sugar</option>
+				<option value="telecommunications-equipment">Telecommunications - Equipment</option>
+				<option value="telecommunications-service">Telecommunications - Service</option>
+				<option value="textiles-composite-mills">Textiles - Composite Mills</option>
+				<option value="textiles-cotton-blended">Textiles - Cotton Blended</option>
+				<option value="textiles-denim">Textiles - Denim</option><option value="textiles-general">Textiles - General</option>
+				<option value="textiles-hosiery-knitwear">Textiles - Hosiery &amp; Knitwear</option>
+				<option value="textiles-machinery">Textiles - Machinery</option>
+				<option value="textiles-manmade">Textiles - Manmade</option>
+				<option value="textiles-processing">Textiles - Processing</option>
+				<option value="textiles-readymade-apparels">Textiles - Readymade Apparels</option>
+				<option value="textiles-spinning-cotton-blended">Textiles - Spinning - Cotton Blended</option>
+				<option value="textiles-spinning-synthetic-blended">Textiles - Spinning - Synthetic Blended</option>
+				<option value="textiles-synthetic-silk">Textiles - Synthetic &amp; Silk</option>
+				<option value="textiles-terry-towels">Textiles - Terry Towels</option>
+				<option value="textiles-weaving">Textiles - Weaving</option>
+				<option value="textiles-woollen-worsted">Textiles - Woollen &amp; Worsted</option>
+				<option value="trading">Trading</option>
+				<option value="transport-logistics">Transport &amp; Logistics</option>
+				<option value="tyres">Tyres</option><option value="vanaspati-oils">Vanaspati &amp; Oils</option>
+</select>

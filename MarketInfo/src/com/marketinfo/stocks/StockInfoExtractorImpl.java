@@ -20,11 +20,11 @@ public class StockInfoExtractorImpl implements StockInfoExtractor {
     @Override
     @GET
     @Produces(MediaType.APPLICATION_XML)
-    @Path("/{marketType}")
-    public ArrayList<StockInfo> getInfoByStockExchange(@PathParam("marketType") String marketType ) {
+    @Path("/{cri}/{marketType}")
+    public ArrayList<StockInfo> getInfoByStockExchange(@PathParam("cri") String cri, @PathParam("marketType") String marketType ) {
         try {
             StringBuffer buffURL = new StringBuffer(URL);
-            buffURL.append("marketcap/").append(marketType).append("/index.html");
+            buffURL.append(cri+"/").append(marketType).append("/index.html");
             return this.getAllStockInfo(buffURL,StockFactory.STOCK_EXCHANGE_INFO);
         } catch (IOException e) {
             // TODO Auto-generated catch block

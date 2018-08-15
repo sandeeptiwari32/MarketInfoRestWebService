@@ -1,2 +1,2 @@
 # MarketInfoRestWebService
-extract market info using web crwaling and transfer data into xml/json fromat using marketinfo rest web service
+extract market info using web crawling and transfer data into xml/json format using marketinfo rest web service
